@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ca2844a1f7784fd9a8dfef7f2658c881" Name="Diagram1">
+        <EntityTypeShape EntityType="ERPModel.Address" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.Client" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.Component" Width="1.5" PointX="7.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.Country" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.Employee" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.Expense" Width="1.5" PointX="7.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.Invoice" Width="1.5" PointX="9.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.Product" Width="1.5" PointX="10.5" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.SaleOrder" Width="1.5" PointX="7.5" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.School" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.StockComponent" Width="1.5" PointX="9.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.StockProduct" Width="1.5" PointX="12.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPModel.Vendor" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <AssociationConnector Association="ERPModel.AddressCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.ClientAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.EmployeeAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.VendorAddress" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.ClientSchool" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.InvoiceClient" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.ComponentForStock" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.idCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.ExpenseByEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.SaleByEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.StockComponentPurchase" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.InvoiceSaleOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.StockForProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.SaleForStock" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.StockComponentByVendor" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.StockComponentForProductStock" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPModel.ProductComponents" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
