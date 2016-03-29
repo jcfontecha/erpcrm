@@ -19,6 +19,9 @@ namespace ERPCRM
     /// </summary>
     public partial class Inventario : Window
     {
+
+        private ERPContext context = new ERPContext();
+
         public Inventario()
         {
             InitializeComponent();
@@ -30,6 +33,17 @@ namespace ERPCRM
             System.Windows.Data.CollectionViewSource stockProductViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("stockProductViewSource")));
             // Load data by setting the CollectionViewSource.Source property:
             // stockProductViewSource.Source = [generic data source]
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            context.SaveChanges();
+            this.Close();
         }
     }
 }
